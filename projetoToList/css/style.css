@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins'
+}
+
+body {
+    background: linear-gradient(90deg, rgb(65, 184, 1) 0%, rgb(0, 212, 255, 1) 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border: 2px solid #fff;
+    padding: 40px 20px;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.newTaskContainer {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.newTaskContainer input:focus {
+    outline: none;
+    border-color: rgb(65, 184, 1);
+    color: rgb(0, 0, 0);
+}
+
+.newTaskContainer input {
+    width: 100%;
+    font-size: 1rem;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+    margin-right: 10px;
+
+}
+
+#newTaskBtn {
+    padding: 12px;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(0, 212, 255, 1) 0%, rgb(65, 184, 1) 100%);
+}
+
+.newTasks {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    margin-top: 10%;
+}
+
+h2 {
+    font-weight: 300;
+    text-align: center;
+    color: rgb(3, 3, 3);
+}
+
+/* Classe de Validação */
+.erro {
+    border: 2px solid red !important;
+}
+
+.erro::placeholder {
+    color: red;
+}
+
+
+/* DIV - Adicionar Tarefa */
+.tasksItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.tasksItem p {
+    font-weight: bolder;
+}
+
+.tasksItem i {
+    background-color: rgb(65, 184, 1);
+    color: #fff;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.completed {
+    color: #d1d3d4;
+    background-color: rgb(65, 184, 1);
+}
